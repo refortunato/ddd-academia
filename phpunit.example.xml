@@ -1,0 +1,21 @@
+<!-- rename this file to phpunit.xml-->
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="true" verbose="true" stopOnFailure="true">
+    <php>
+        <const name="DB_SERVER" value="localhost" />
+        <const name="DB_NAME" value="my_database_test_name" />
+        <const name="DB_USER" value="my_user_database_test_name" />
+        <const name="DB_PASSWORD" value="my_user_password_test" />
+    </php>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests/Academia/Register/Domain/Entities</directory>
+            <directory>tests/Academia/Register/Application/Services</directory>
+            <directory>tests/Academia/Subscription/Application/Services</directory>
+            <directory>tests/Academia/Authentication/Application/Services</directory>
+        </testsuite>
+        <testsuite name="controller">
+            <directory>tests/Academia/Authentication/Controllers</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

@@ -1,0 +1,7 @@
+vendor
+teste.php
+test.php
+testeDataMapper.php
+src/Academia/Core/Config/DatabaseConf.php
+phpunit.xml
+src/Academia/Core/Logs/*
